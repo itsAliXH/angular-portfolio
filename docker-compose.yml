@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  angular:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./:/app:cached       # syncs your source code into container
+      - /app/node_modules    # keeps node_modules isolated inside container
+    ports:
+      - "4200:4200"
+    environment:
+      - CHOKIDAR_USEPOLLING=true

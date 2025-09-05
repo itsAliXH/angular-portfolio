@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: rgb(214, 208, 208);
+  /* padding: 2rem; */
+}
+
+main {
+  flex: 1;
+}
+
+/* Ensure routed pages clear the fixed navbar */
+router-outlet + * {
+  /* display: block; */
+  --navbar-height: 60px;
+  min-height: calc(100vh - var(--navbar-height));
+  padding-top: var(--navbar-height);
+  max-height: calc(100vh - 80px);
+}
+
+/* Responsive padding for mobile */
+@media (max-width: 768px) {
+  router-outlet + * {
+    --navbar-height: 70px;
+  }
+}
+
+.page-content {
+  --navbar-height: 60px;
+  margin-top: var(--navbar-height);
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    --navbar-height: 70px;
+  }
+}
+  

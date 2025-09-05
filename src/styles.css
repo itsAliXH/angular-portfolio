@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Ensure full height for components */
+html, body {
+  height: 100%;
+}
+
+/* Container utility */
+.container {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    padding: 3.5rem 0.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 3.5rem 0.25rem;
+  }
+}
+
+/*  */
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive helpers */
+.text-center {
+  text-align: center;
+}
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Base mobile-first design */
+body {
+  font-size: 16px;
+}
+
+/* Tablets (≥ 600px) */
+@media (min-width: 600px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+/* Small laptops (≥ 768px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktops (≥ 1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+  
+  

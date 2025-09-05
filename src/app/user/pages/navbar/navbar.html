@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="#" (click)="$event.preventDefault(); scrollTo('home')">Ali Asghar</a>
+    </div>
+    
+    <div class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a href="#" (click)="$event.preventDefault(); scrollTo('home')">Home</a></li>
+      <li><a href="#" (click)="$event.preventDefault(); scrollTo('about')">About</a></li>
+      <li><a href="#" (click)="$event.preventDefault(); scrollTo('projects')">Projects</a></li>
+      <li><a href="#" (click)="$event.preventDefault(); scrollTo('contact')">Contact</a></li>
+    </ul>
+  </div>
+</nav>

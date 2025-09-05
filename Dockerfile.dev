@@ -1,0 +1,16 @@
+# Use Node.js v22 (matches your local NVM version 22.17.1)
+FROM node:22
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy only dependency manifest files first
+COPY package*.json ./
+
+# Install dependencies exactly as locked in package-lock.json
+RUN npm ci
+
+# Default command: start Angular dev server
+# --host 0.0.0.0 → allow external connections (so host can reach container)
+# --poll 2000   → reliable file change detection on macOS/Windows Docker
+CMD ["npm", "start", "--", "--host", "0.0.0.0", "--poll", "2000"]
