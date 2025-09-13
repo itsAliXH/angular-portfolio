@@ -144,6 +144,9 @@
   .project-card:nth-child(5) { 
     animation: fadeInUp 0.8s ease-out 0.5s forwards, float 6s ease-in-out 1.8s infinite;
   }
+  .project-card:nth-child(6) { 
+    animation: fadeInUp 0.8s ease-out 0.5s forwards, float 6s ease-in-out 1.8s infinite;
+  }
   
   .project-card:hover {
     transform: translateY(-12px) scale(1.02);
@@ -247,8 +250,10 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: radial-gradient(circle at 20% 30%, #f39c12 0%, transparent 60%), 
-                radial-gradient(circle at 80% 70%, #d4af75 0%, transparent 60%);
+    /* background: radial-gradient(circle at 20% 30%, #f39c12 0%, transparent 60%), 
+                radial-gradient(circle at 80% 70%, #d4af75 0%, transparent 60%); */
+    background: radial-gradient(circle at 20% 30%, #78d17b 0%, #cacbe3 60%), 
+                radial-gradient(circle at 80% 70%, #5a5d74 0%, transparent 60%);
     opacity: 0.18;
     pointer-events: none;
   }

@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-    {path: '' , redirectTo: 'user', pathMatch: 'full'},
+    {path: '' , redirectTo: 'portfolio', pathMatch: 'full'},
 
     // Lazy load User routes
     {
-        path: 'user',
+        path: 'portfolio',
         loadChildren: () =>
         import('./user/user.routes').then(m => m.USER_ROUTES)
     },
