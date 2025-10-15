@@ -7,8 +7,7 @@ import { Contact } from './pages/contact/contact';
 import { Footer } from '../common/footer/footer';
 
 export const USER_ROUTES: Routes = [
-//   { path: '', component: Navbar },
-  { path: 'home', component: Home },
+  { path: '', component: Home },
   { path: 'about', component: About },
   { path: 'projects', component: Projects },
   { path: 'contact', component: Contact },

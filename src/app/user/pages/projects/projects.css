@@ -147,6 +147,9 @@
   .project-card:nth-child(6) { 
     animation: fadeInUp 0.8s ease-out 0.5s forwards, float 6s ease-in-out 1.8s infinite;
   }
+  .project-card:nth-child(7) { 
+    animation: fadeInUp 0.8s ease-out 0.5s forwards, float 6s ease-in-out 1.8s infinite;
+  }
   
   .project-card:hover {
     transform: translateY(-12px) scale(1.02);
@@ -167,10 +170,27 @@
     margin-bottom: 15px;
     background: #f8f8f8;
   }
+
+  .project-emoji {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 15px;
+    background: #f8f8f8;
+    font-size: 4rem;
+  }
   
   .project-card:hover img {
     transform: scale(1.05);
     filter: brightness(1.1);
+  }
+
+  .project-card:hover .project-emoji {
+    transform: scale(1.05);
   }
   .project-link {
     text-decoration: none;
